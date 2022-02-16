@@ -1,5 +1,9 @@
+import styles from '../styles/home.module.scss';
+
 export default function Home() {
   return (
-    <div>Hello Next.js</div>
+    <div>
+      <h1 className={styles.title}>Hello Next.js</h1>
+      </div>
   )
 }
