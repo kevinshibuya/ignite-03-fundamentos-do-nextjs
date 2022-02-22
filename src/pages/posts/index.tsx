@@ -48,8 +48,6 @@ export const getStaticProps: GetStaticProps = async () => {
     fetch: ['post.title', 'post.content']
   });
 
-  console.log(JSON.stringify(response, null, 2));
-
   const posts = response.results.map(post => {
     return {
       slug: post.uid,
