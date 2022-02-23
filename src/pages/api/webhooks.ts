@@ -70,6 +70,7 @@ async function Webhooks(request: NextApiRequest, response: NextApiResponse) {
             throw new Error('Unhandled event.');
         }
       } catch (error) {
+        console.log(error);
         return response.json({ error: 'Webhook handle failed.' })
       }
     }
