@@ -71,7 +71,7 @@ async function Webhooks(request: NextApiRequest, response: NextApiResponse) {
         }
       } catch (error) {
         console.log(error);
-        return response.json({ error: 'Webhook handle failed.' })
+        return response.status(400).json({ error: 'Webhook handle failed.' })
       }
     }
 
